@@ -38,7 +38,7 @@ List of circRNAs in BED6 format
 | 4      | circRNA ID (chr:start-end:strand)       |
 | 5      | Strand                                  |
 | 6      | Type (exon, intron, intergenic)         |
-| 7      | Host gene ensembl ID (N/A if intergenic |
+| 7      | Host gene ensembl ID (N/A if intergenic) |
 | 8      | Gene biotype                            |
 <br>
 
