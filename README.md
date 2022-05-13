@@ -5,14 +5,14 @@ A simple .sh script to annotate circRNA/backsplice junctions based on GENCODE an
 ```
 sh annotate.sh candidate_circRNA.bed gencode.v39.annotation.gtf
 ```
-<br>
+
 
 ## Requirements
 
 -   BEDTools (tested on v2.30.0)
 
 -   GENCODE annotation file in GTF format (ungzipped)  
-<br>
+
 
 ## Input
 List of circRNAs in BED6 format 
@@ -26,7 +26,7 @@ List of circRNAs in BED6 format
 ```
 1	100049908	100080659	1:100049908-100080659:+	.	+
 ```
-<br>
+
 
 ## Output
 "annotatedCircs.txt"
