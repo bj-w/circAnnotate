@@ -1,5 +1,5 @@
 # circAnnotate
-A tool to annotate circRNA/backsplice junctions.
+A simple .sh script to annotate circRNA/backsplice junctions based on GENCODE annotations (for now).
 <br>
 
 ```
@@ -20,7 +20,7 @@ List of circRNAs in BED6 format
 
 | Chromosome | Junction start | Junction end | circRNA ID | score (ignored) | Strand |
 |------------|----------------|--------------|------------|-----------------|--------|
-<br>
+
 
 *Example input*
 ```
@@ -40,10 +40,20 @@ List of circRNAs in BED6 format
 | 6      | Type (exon, intron, intergenic)         |
 | 7      | Host gene ensembl ID (N/A if intergenic) |
 | 8      | Gene biotype                            |
-<br>
+
 
 *Example output*
 ```
 chr1	100049908	100080659	1:100049908-100080659:+	+	exon	ENSG00000283761.1	 protein_coding
 chr1	100049908	100080659	1:100049908-100080659:+	+	exon	ENSG00000156875.14	 protein_coding
 ```
+
+If coordinates overlap with multiple features, they will all be listed in the output.
+<br>
+<br>
+
+### To do
+- Add gene symbols to output
+- Overlap with circRNAs listed in databases (CircAtlas, circBAse, CIRCpedia)
+- Make compatable with ensembl and RefSeq annotations
+- Number of exons (would assume no differential splicing)
