@@ -49,11 +49,3 @@ chr1	100049908	100080659	1:100049908-100080659:+	+	exon	ENSG00000156875.14	 prot
 ```
 
 If coordinates overlap with multiple features, they will all be listed in the output.
-<br>
-<br>
-
-### To do
-- Add gene symbols to output
-- Overlap with circRNAs listed in databases (CircAtlas, circBAse, CIRCpedia)
-- Make compatable with ensembl and RefSeq annotations
-- Number of exons (would assume no differential splicing)
